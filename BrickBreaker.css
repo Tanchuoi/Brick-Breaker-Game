@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+canvas {
+  background-color: #4f6f52;
+}
+
+.canvasContainer {
+  text-align: center;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#soundBtn {
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
+#gameOver {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+
+#youWinImg {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  top: 400px;
+  display: none;
+}
+
+#youLoseImg {
+  position: absolute;
+  width: 500px;
+  height: 400px;
+  display: none;
+}
+
+#restart {
+  position: absolute;
+  font-size: 24px;
+  font-family: Lato;
+  cursor: pointer;
+  color: #fff;
+  top: 560px;
+  display: none;
+}
+
+#gameTitle {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  font-size: 50px;
+  font-family: Lato;
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body {
+  margin: 0;
+  overflow: hidden;
+  background-image: url("assets/img/background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}

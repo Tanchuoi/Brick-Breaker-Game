@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BrickBreakerGame</title>
+    <link rel="stylesheet" href="BrickBreaker.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato" />
+</head>
+
+<body>
+    <div id="gameTitle">
+        <pre>
+            <u>Brick Breaker Game </u>
+
+           Press <b>Enter</b> to start
+
+    Use <b>Left</b> and <b>Right</b> arrow keys to move
+    </pre>
+    </div>
+    <div class="canvasContainer">
+        <canvas id="canvas"> </canvas>
+        <img id="soundBtn" src="assets/img/SOUND_OFF.png" alt="Sound Image Button">
+
+        <div id="gameOver">
+            <img src="assets/img/youwin.png" alt="" id="youWinImg">
+            <img src="assets/img/youlose.png" alt="" id="youLoseImg">
+            <div id="restart">Restart</div>
+        </div>
+
+    </div>
+    <script src="Canvas.js"></script>
+    <script src="Stats&Audio.js"></script>
+    <script src="Paddle.js"></script>
+    <script src="Ball.js"></script>
+    <script src="Brick.js"></script>
+    <script src="BrickBreakerGame.js"></script>
+
+</body>
+
+</html>
